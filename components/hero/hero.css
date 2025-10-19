@@ -1,0 +1,751 @@
+/* components/hero/hero.css */
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+    background: #000;
+    /* ФИКСИРУЕМ МЕРЦАНИЕ ПРИ СКРОЛЛЕ */
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    /* КРИТИЧЕСКИ ВАЖНЫЕ СВОЙСТВА ДЛЯ ВИДЕО */
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    will-change: transform;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    filter: brightness(0.23); /* Заменяем overlay на фильтр яркости */
+    pointer-events: none;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    /* УДАЛЯЕМ градиент и заменяем на прозрачность */
+    background: transparent;
+    /* Аппаратное ускорение */
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    pointer-events: none;
+}
+
+/* Остальной ваш CSS остается без изменений */
+.content-wrapper {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding: 180px 80px 80px 80px;
+}
+
+.left-section {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 80px;
+}
+
+.header-section {
+    flex-shrink: 0;
+}
+
+.main-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(32px, 4vw, 64px);
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    line-height: 1.1;
+}
+
+.subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(14px, 1.2vw, 18px);
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.85);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.company-description {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(14px, 1.1vw, 16px);
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 650px;
+    margin-bottom: 40px;
+}
+
+.philosophy-section {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(233, 75, 60, 0.3);
+}
+
+.philosophy-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.philosophy-text {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(20px, 1.8vw, 28px);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    max-width: 500px;
+    line-height: 1.3;
+}
+
+.right-section {
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 80px;
+}
+
+.timeline-container {
+    width: 100%;
+    max-width: 600px;
+    height: 380px;
+    position: relative;
+}
+
+.timeline-line {
+    position: absolute;
+    bottom: 77px;
+    left: 0;
+    width: 100%;
+    height: 318px;
+    z-index: 1;
+}
+
+.timeline-line svg {
+    width: 100%;
+    height: 100%;
+}
+
+.timeline-items {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
+.timeline-item {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInUp 0.8s ease-out backwards;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+.timeline-item:nth-child(1) {
+    bottom: 10px;
+    left: 0;
+    animation-delay: 0.1s;
+}
+
+.timeline-item:nth-child(2) {
+    bottom: 89px;
+    left: 25%;
+    animation-delay: 0.2s;
+}
+
+.timeline-item:nth-child(3) {
+    bottom: 168px;
+    left: 50%;
+    animation-delay: 0.3s;
+}
+
+.timeline-item:nth-child(4) {
+    bottom: 247px;
+    left: 75%;
+    animation-delay: 0.4s;
+}
+
+.timeline-item:nth-child(5) {
+    bottom: 326px;
+    left: 100%;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.timeline-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-icon svg {
+    width: 100%;
+    height: 100%;
+    stroke: var(--primary-color);
+    stroke-width: 1.5;
+    fill: none;
+}
+
+.timeline-dot {
+    width: 14px;
+    height: 14px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 0 20px rgba(233, 75, 60, 0.5);
+}
+
+.timeline-year {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 6px;
+    white-space: nowrap;
+}
+
+.timeline-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-tertiary);
+    white-space: nowrap;
+}
+
+.mobile-timeline {
+    display: none;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.mobile-timeline-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+}
+
+.mobile-timeline-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    position: relative;
+}
+
+.mobile-timeline-row.row-top {
+    margin-bottom: 30px;
+}
+
+.mobile-timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.mobile-timeline-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+
+.mobile-timeline-icon svg {
+    width: 100%;
+    height: 100%;
+    stroke: var(--primary-color);
+    stroke-width: 1.5;
+    fill: none;
+}
+
+.mobile-timeline-year {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.mobile-timeline-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.mobile-timeline-separator {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0 15px;
+}
+
+.mobile-timeline-vertical {
+    width: 2px;
+    height: 30px;
+    background: var(--primary-color);
+}
+
+@media (min-width: 1600px) {
+    .content-wrapper {
+        padding: 200px 120px 100px 120px;
+    }
+    
+    .left-section {
+        padding-right: 100px;
+    }
+    
+    .right-section {
+        padding-left: 100px;
+    }
+    
+    .timeline-container {
+        height: 420px;
+    }
+    
+    .timeline-line {
+        bottom: 85px;
+        height: 350px;
+    }
+    
+    .timeline-item:nth-child(2) {
+        bottom: 97.5px;
+    }
+
+    .timeline-item:nth-child(3) {
+        bottom: 185px;
+    }
+
+    .timeline-item:nth-child(4) {
+        bottom: 272.5px;
+    }
+
+    .timeline-item:nth-child(5) {
+        bottom: 360px;
+    }
+}
+
+@media (max-width: 1599px) and (min-width: 1200px) {
+    .main-title {
+        letter-spacing: 6px;
+    }
+}
+
+@media (max-width: 1150px) and (min-width: 1024px) {
+    .timeline-container {
+        margin-left: -40px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .timeline-container {
+        display: none;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        padding: 140px 40px 60px 40px;
+        align-items: center;
+    }
+
+    .left-section {
+        flex: none;
+        width: 100%;
+        max-width: 700px;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .right-section {
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .main-title {
+        font-size: 48px;
+        letter-spacing: 4px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    .company-description {
+        font-size: 15px;
+    }
+
+    .philosophy-section {
+        margin-top: 30px;
+        padding-top: 25px;
+    }
+
+    .philosophy-text {
+        font-size: 24px;
+    }
+
+    .mobile-timeline {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .content-wrapper {
+        flex-direction: column;
+        padding: 120px 30px 50px 30px;
+        align-items: center;
+    }
+
+    .left-section {
+        flex: none;
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .right-section {
+        flex: none;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .main-title {
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+        margin-bottom: 20px;
+    }
+
+    .company-description {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .philosophy-section {
+        margin-top: 20px;
+        padding-top: 18px;
+    }
+
+    .philosophy-text {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .mobile-timeline {
+        padding: 25px 0;
+    }
+
+    .mobile-timeline-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .mobile-timeline-year {
+        font-size: 16px;
+    }
+
+    .mobile-timeline-separator {
+        font-size: 16px;
+        margin: 0 12px;
+    }
+
+    .mobile-timeline-label {
+        font-size: 8px;
+    }
+
+    .mobile-timeline-vertical {
+        height: 25px;
+    }
+}
+
+@media (max-width: 599px) {
+    .content-wrapper {
+        padding: 110px 25px 40px 25px;
+    }
+
+    .left-section {
+        margin-bottom: 25px;
+    }
+
+    .main-title {
+        font-size: 30px;
+        letter-spacing: 1.5px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .company-description {
+        font-size: 13px;
+    }
+
+    .philosophy-section {
+        margin-top: 18px;
+        padding-top: 16px;
+    }
+
+    .philosophy-label {
+        font-size: 10px;
+    }
+
+    .philosophy-text {
+        font-size: 18px;
+    }
+
+    .mobile-timeline {
+        padding: 20px 0;
+    }
+
+    .mobile-timeline-icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .mobile-timeline-year {
+        font-size: 15px;
+    }
+
+    .mobile-timeline-separator {
+        font-size: 15px;
+        margin: 0 10px;
+    }
+
+    .mobile-timeline-label {
+        font-size: 8px;
+    }
+
+    .mobile-timeline-vertical {
+        height: 22px;
+    }
+}
+
+@media (max-width: 479px) {
+    .content-wrapper {
+        padding: 100px 20px 30px 20px;
+    }
+
+    .left-section {
+        margin-bottom: 20px;
+    }
+
+    .main-title {
+        font-size: 26px;
+        letter-spacing: 1px;
+    }
+
+    .subtitle {
+        font-size: 11px;
+        margin-bottom: 15px;
+    }
+
+    .company-description {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .philosophy-section {
+        margin-top: 16px;
+        padding-top: 14px;
+    }
+
+    .philosophy-label {
+        font-size: 9px;
+    }
+
+    .philosophy-text {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+    }
+
+    .mobile-timeline {
+        padding: 18px 0;
+    }
+
+    .mobile-timeline-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .mobile-timeline-year {
+        font-size: 14px;
+    }
+
+    .mobile-timeline-separator {
+        font-size: 14px;
+        margin: 0 8px;
+    }
+
+    .mobile-timeline-label {
+        font-size: 7px;
+    }
+
+    .mobile-timeline-vertical {
+        height: 20px;
+    }
+}
+
+@media (max-width: 374px) {
+    .content-wrapper {
+        padding: 95px 15px 25px 15px;
+    }
+
+    .left-section {
+        margin-bottom: 18px;
+    }
+
+    .main-title {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 10px;
+    }
+
+    .company-description {
+        font-size: 11px;
+    }
+
+    .philosophy-section {
+        margin-top: 14px;
+        padding-top: 12px;
+    }
+
+    .philosophy-text {
+        font-size: 15px;
+    }
+
+    .mobile-timeline {
+        padding: 15px 0;
+    }
+
+    .mobile-timeline-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .mobile-timeline-year {
+        font-size: 13px;
+    }
+
+    .mobile-timeline-separator {
+        font-size: 13px;
+        margin: 0 6px;
+    }
+
+    .mobile-timeline-label {
+        font-size: 7px;
+    }
+
+    .mobile-timeline-vertical {
+        height: 18px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .content-wrapper {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .content-wrapper {
+        padding: 100px 40px 40px 40px;
+        min-height: auto;
+    }
+
+    .left-section {
+        margin-bottom: 30px;
+    }
+
+    .main-title {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        margin-bottom: 15px;
+    }
+
+    .company-description {
+        margin-bottom: 20px;
+    }
+
+    .philosophy-section {
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+
+    .timeline-container {
+        height: 200px;
+    }
+}

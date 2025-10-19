@@ -1,0 +1,876 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Construction Group - Глобальный консалтинг и строительство</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="components/header/header.css">
+    <link rel="stylesheet" href="components/hero/hero.css">
+    <link rel="stylesheet" href="components/about/about.css">
+    <link rel="stylesheet" href="components/advantages/advantages.css">
+    <link rel="stylesheet" href="components/partners/partners.css">
+    <link rel="stylesheet" href="components/contacts/contacts.css">
+    <link rel="stylesheet" href="components/footer/footer.css">
+</head>
+
+<body>
+    <!-- Header Component -->
+    <div class="header-bar">
+        <img src="assets/images/logo.png" alt="MCG Logo" class="logo">
+        <nav class="nav-menu">
+            <a href="#" class="nav-link">Главная</a>
+            <a href="#about" class="nav-link">О нас</a>
+            <a href="#advantages" class="nav-link">Преимущества</a>
+            <a href="#partners" class="nav-link">Партнеры</a>
+            <a href="#contacts" class="nav-link">Контакты</a>
+        </nav>
+        <div class="burger-menu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </div>
+    </div>
+
+    <div class="mobile-menu">
+        <a href="#" class="mobile-nav-link">Главная</a>
+        <a href="#" class="mobile-nav-link">О нас</a>
+        <a href="#" class="mobile-nav-link">Проекты</a>
+        <a href="#" class="mobile-nav-link">Услуги</a>
+        <a href="#" class="mobile-nav-link">Контакты</a>
+    </div>
+
+    <!-- Hero Component -->
+    <div class="hero-section">
+        <video class="video-background" autoplay loop muted playsinline>
+            <source src="assets/videos/1.mp4" type="video/mp4">
+        </video>
+
+        <div class="video-overlay"></div>
+
+        <div class="content-wrapper">
+            <div class="left-section">
+                <div class="header-section">
+                    <h1 class="main-title">MODERN CONSTRUCTION GROUP</h1>
+                    <p class="subtitle">Глобальный консалтинг и строительство премиум-класса</p>
+
+                    <p class="company-description">
+                        Более 30 лет опыта в проектировании, инженерии и строительстве. Команда из 120+ специалистов
+                        высочайшей квалификации. Успешно реализовано свыше 100 проектов для мировых лидеров индустрии.
+                    </p>
+
+                    <div class="philosophy-section">
+                        <p class="philosophy-label">Наша философия</p>
+                        <p class="philosophy-text">Люди • Опыт • Надежность</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="timeline-container">
+                    <div class="timeline-line">
+                        <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <path
+                                d="M 0,100 Q 8,95 12.5,87 Q 17,79 25,75 Q 33,71 37.5,63 Q 42,55 50,50 Q 58,45 62.5,37 Q 67,29 75,25 Q 83,21 87.5,13 Q 92,5 100,0"
+                                fill="none" stroke="#E94B3C" stroke-width="0.5" vector-effect="non-scaling-stroke" />
+                        </svg>
+                    </div>
+                    <div class="timeline-items">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 21V13L12 3L21 13V21H14V16H10V21H3Z" />
+                                </svg>
+                            </div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-year">1994</div>
+                                <div class="timeline-label">Основание</div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 21L3 12M21 21V9M12 21V3" />
+                                    <circle cx="3" cy="18" r="2" />
+                                    <circle cx="12" cy="6" r="2" />
+                                    <circle cx="21" cy="12" r="2" />
+                                </svg>
+                            </div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-year">2000</div>
+                                <div class="timeline-label">Расширение</div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 20V16C2 14 3 12 5 12H19C21 12 22 14 22 16V20" />
+                                    <path d="M5 12V8C5 6 6 5 8 5H16C18 5 19 6 19 8V12" />
+                                    <line x1="8" y1="12" x2="8" y2="20" />
+                                    <line x1="12" y1="12" x2="12" y2="20" />
+                                    <line x1="16" y1="12" x2="16" y2="20" />
+                                </svg>
+                            </div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-year">2010</div>
+                                <div class="timeline-label">Масштабирование</div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="10" width="7" height="11" />
+                                    <rect x="14" y="6" width="7" height="15" />
+                                    <line x1="5" y1="13" x2="8" y2="13" />
+                                    <line x1="5" y1="16" x2="8" y2="16" />
+                                    <line x1="16" y1="9" x2="19" y2="9" />
+                                    <line x1="16" y1="12" x2="19" y2="12" />
+                                    <line x="16" y1="15" x2="19" y2="15" />
+                                </svg>
+                            </div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-year">2020</div>
+                                <div class="timeline-label">Инновации</div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="8" y="3" width="8" height="18" />
+                                    <line x1="10" y1="6" x2="14" y2="6" />
+                                    <line x1="10" y1="9" x2="14" y2="9" />
+                                    <line x1="10" y1="12" x2="14" y2="12" />
+                                    <line x1="10" y1="15" x2="14" y2="15" />
+                                    <line x1="10" y1="18" x2="14" y2="18" />
+                                    <path d="M12 3L8 3L8 1L16 1L16 3L12 3Z" />
+                                </svg>
+                            </div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-year">2025</div>
+                                <div class="timeline-label">Лидерство</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-timeline">
+                    <div class="mobile-timeline-grid">
+                        <div class="mobile-timeline-row row-top">
+                            <div class="mobile-timeline-item">
+                                <div class="mobile-timeline-icon">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 21V13L12 3L21 13V21H14V16H10V21H3Z" />
+                                    </svg>
+                                </div>
+                                <span class="mobile-timeline-year">1994</span>
+                                <span class="mobile-timeline-label">Основание</span>
+                            </div>
+                            <span class="mobile-timeline-separator">—</span>
+                            <div class="mobile-timeline-item">
+                                <div class="mobile-timeline-icon">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 21L3 12M21 21V9M12 21V3" />
+                                        <circle cx="3" cy="18" r="2" />
+                                        <circle cx="12" cy="6" r="2" />
+                                        <circle cx="21" cy="12" r="2" />
+                                    </svg>
+                                </div>
+                                <span class="mobile-timeline-year">2000</span>
+                                <span class="mobile-timeline-label">Расширение</span>
+                            </div>
+                            <span class="mobile-timeline-separator">—</span>
+                            <div class="mobile-timeline-item">
+                                <div class="mobile-timeline-icon">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 20V16C2 14 3 12 5 12H19C21 12 22 14 22 16V20" />
+                                        <path d="M5 12V8C5 6 6 5 8 5H16C18 5 19 6 19 8V12" />
+                                        <line x1="8" y1="12" x2="8" y2="20" />
+                                        <line x1="12" y1="12" x2="12" y2="20" />
+                                        <line x1="16" y1="12" x2="16" y2="20" />
+                                    </svg>
+                                </div>
+                                <span class="mobile-timeline-year">2010</span>
+                                <span class="mobile-timeline-label">Масштабирование</span>
+                            </div>
+                        </div>
+
+                        <div class="mobile-timeline-vertical"></div>
+
+                        <div class="mobile-timeline-row row-bottom">
+                            <div class="mobile-timeline-item">
+                                <div class="mobile-timeline-icon">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="8" y="3" width="8" height="18" />
+                                        <line x1="10" y1="6" x2="14" y2="6" />
+                                        <line x1="10" y1="9" x2="14" y2="9" />
+                                        <line x1="10" y1="12" x2="14" y2="12" />
+                                        <line x1="10" y1="15" x2="14" y2="15" />
+                                        <line x1="10" y1="18" x2="14" y2="18" />
+                                        <path d="M12 3L8 3L8 1L16 1L16 3L12 3Z" />
+                                    </svg>
+                                </div>
+                                <span class="mobile-timeline-year">2025</span>
+                                <span class="mobile-timeline-label">Лидерство</span>
+                            </div>
+                            <span class="mobile-timeline-separator">—</span>
+                            <div class="mobile-timeline-item">
+                                <div class="mobile-timeline-icon">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="3" y="10" width="7" height="11" />
+                                        <rect x="14" y="6" width="7" height="15" />
+                                        <line x1="5" y1="13" x2="8" y2="13" />
+                                        <line x1="5" y1="16" x2="8" y2="16" />
+                                        <line x1="16" y1="9" x2="19" y2="9" />
+                                        <line x1="16" y1="12" x2="19" y2="12" />
+                                        <line x="16" y1="15" x2="19" y2="15" />
+                                    </svg>
+                                </div>
+                                <span class="mobile-timeline-year">2020</span>
+                                <span class="mobile-timeline-label">Инновации</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Component -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="section-badge">О компании</div>
+                    <h2 class="about-title">Строим будущее с <span class="highlight">1994 года</span></h2>
+                    <p class="about-description">
+                        Modern Construction Group — это глобальная команда высококвалифицированных специалистов,
+                        предоставляющих полный цикл строительных услуг мирового уровня.
+                    </p>
+                    <p class="about-description">
+                        Мы реализуем проекты любой сложности: от стратегического планирования до финальной сдачи
+                        объекта. Наши специалисты освоили полный цикл работ генерального подрядчика — от подготовки
+                        площадки и фундамента до возведения зданий и ландшафтного дизайна.
+                    </p>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" />
+                                    <path d="M12 22V12" />
+                                    <path d="M22 7L12 12L2 7" />
+                                </svg>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">30+</div>
+                                <div class="stat-label">Лет опыта в индустрии</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path
+                                        d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" />
+                                    <path
+                                        d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" />
+                                </svg>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">120+</div>
+                                <div class="stat-label">Квалифицированных специалистов</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 11L12 14L22 4" />
+                                    <path
+                                        d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" />
+                                </svg>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">100+</div>
+                                <div class="stat-label">Успешно реализованных проектов</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                                </svg>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">60%</div>
+                                <div class="stat-label">Специалистов с опытом 25+ лет</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-cta">
+                        <a href="#" class="cta-button primary">
+                            <span>Обсудить проект</span>
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" />
+                            </svg>
+                        </a>
+                        <a href="#" class="cta-button secondary">
+                            <span>Наши проекты</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about-right">
+                    <div class="image-grid">
+                        <div class="image-card main-card">
+                            <img src="assets/images/team.png" alt="MCG Team">
+                            <div class="image-overlay">
+                                <div class="overlay-text">Наша команда</div>
+                            </div>
+                        </div>
+                        <div class="image-card secondary-card">
+                            <img src="assets/images/project1.webp" alt="Project">
+                            <div class="image-overlay">
+                                <div class="overlay-text">Проектирование</div>
+                            </div>
+                        </div>
+                        <div class="image-card secondary-card">
+                            <img src="assets/images/project2.jpg" alt="Construction">
+                            <div class="image-overlay">
+                                <div class="overlay-text">Реализация</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trust-badge">
+                        <div class="badge-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" />
+                                <path d="M9 12L11 14L15 10" />
+                            </svg>
+                        </div>
+                        <div class="badge-text">
+                            <div class="badge-title">Building a Trust</div>
+                            <div class="badge-subtitle">as a Solid Concrete™</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-background">
+            <div class="bg-circle circle-1"></div>
+            <div class="bg-circle circle-2"></div>
+            <div class="bg-circle circle-3"></div>
+        </div>
+    </section>
+
+    <!-- Advantages Component -->
+    <section id="advantages" class="advantages-section">
+        <div class="advantages-container">
+            <div class="advantages-header">
+                <div class="section-badge">Наши преимущества</div>
+                <h2 class="advantages-title">Почему выбирают <span class="highlight">Modern Construction Group</span>
+                </h2>
+                <p class="advantages-subtitle">Комплексный подход и безупречное качество на каждом этапе сотрудничества
+                </p>
+            </div>
+
+            <div class="advantages-grid">
+                <!-- Преимущество 1 -->
+                <div class="advantage-card">
+                    <div class="advantage-card-header">
+                        <div class="advantage-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 12L11 14L15 10" stroke-width="2" />
+                                <path
+                                    d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C13.1978 3 14.3457 3.23385 15.409 3.66298"
+                                    stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <h3 class="advantage-title">Гарантия качества</h3>
+                    </div>
+                    <p class="advantage-description">
+                        Строгий контроль на всех этапах строительства. Используем только сертифицированные материалы и
+                        технологии.
+                    </p>
+                    <div class="advantage-meta">
+                        <span class="meta-text">ISO 9001:2015</span>
+                    </div>
+                </div>
+
+                <!-- Преимущество 2 -->
+                <div class="advantage-card">
+                    <div class="advantage-card-header">
+                        <div class="advantage-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                    stroke-width="1.5" />
+                                <path d="M15 9L9 15" stroke-width="2" />
+                                <path d="M9 9L15 15" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h3 class="advantage-title">Фиксированные сроки</h3>
+                    </div>
+                    <p class="advantage-description">
+                        Соблюдаем договорные обязательства. 98% проектов сдаем в оговоренные сроки без задержек.
+                    </p>
+                    <div class="advantage-meta">
+                        <span class="meta-text">98% вовремя</span>
+                    </div>
+                </div>
+
+                <!-- Преимущество 3 -->
+                <div class="advantage-card">
+                    <div class="advantage-card-header">
+                        <div class="advantage-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 12H22" stroke-width="1.5" />
+                                <path d="M12 2L12 22" stroke-width="1.5" />
+                                <path d="M3 21L21 3" stroke-width="1.5" />
+                                <path d="M21 21L3 3" stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <h3 class="advantage-title">Комплексные решения</h3>
+                    </div>
+                    <p class="advantage-description">
+                        Полный цикл услуг: от проектирования до сдачи под ключ. Единый подрядчик — меньше рисков и
+                        затрат.
+                    </p>
+                    <div class="advantage-meta">
+                        <span class="meta-text">Под ключ</span>
+                    </div>
+                </div>
+
+                <!-- Преимущество 4 -->
+                <div class="advantage-card">
+                    <div class="advantage-card-header">
+                        <div class="advantage-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                                    stroke-width="1.5" />
+                                <path
+                                    d="M19.4 15C19.2669 15.3044 19.1337 15.6088 19.0006 15.9132C18.5298 16.9028 18.0589 17.8924 17.5881 18.882C17.2801 19.5326 16.9721 20.1832 16.6641 20.8338C16.3683 21.4582 15.6317 21.4582 15.3359 20.8338C15.0279 20.1832 14.7199 19.5326 14.4119 18.882C13.9411 17.8924 13.4702 16.9028 12.9994 15.9132C12.8663 15.6088 12.7331 15.3044 12.6 15C12.4669 14.6956 12.3337 14.3912 12.2006 14.0868C11.7298 13.0972 11.2589 12.1076 10.7881 11.118C10.4801 10.4674 10.1721 9.81684 9.86412 9.16623C9.56827 8.54176 8.83173 8.54176 8.53588 9.16623C8.22788 9.81684 7.91989 10.4674 7.61189 11.118C7.14106 12.1076 6.67024 13.0972 6.19941 14.0868C6.06629 14.3912 5.93317 14.6956 5.80006 15"
+                                    stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <h3 class="advantage-title">Инновационные технологии</h3>
+                    </div>
+                    <p class="advantage-description">
+                        BIM-моделирование, "умные" системы, энергоэффективные решения. Строим будущее уже сегодня.
+                    </p>
+                    <div class="advantage-meta">
+                        <span class="meta-text">BIM технологии</span>
+                    </div>
+                </div>
+
+                <!-- Преимущество 5 -->
+                <div class="advantage-card">
+                    <div class="advantage-card-header">
+                        <div class="advantage-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21"
+                                    stroke-width="1.5" />
+                                <path
+                                    d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z"
+                                    stroke-width="1.5" />
+                                <path
+                                    d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13"
+                                    stroke-width="1.5" />
+                                <path
+                                    d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88"
+                                    stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <h3 class="advantage-title">Команда экспертов</h3>
+                    </div>
+                    <p class="advantage-description">
+                        120+ высококвалифицированных специалистов. 60% сотрудников с опытом работы более 25 лет.
+                    </p>
+                    <div class="advantage-meta">
+                        <span class="meta-text">120+ специалистов</span>
+                    </div>
+                </div>
+
+                <!-- Преимущество 6 -->
+                <div class="advantage-card">
+                    <div class="advantage-card-header">
+                        <div class="advantage-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                    stroke-width="1.5" />
+                                <path d="M12 6V12L16 14" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h3 class="advantage-title">Прозрачность работы</h3>
+                    </div>
+                    <p class="advantage-description">
+                        Регулярная отчетность, открытая система коммуникации. Вы всегда в курсе этапов проекта.
+                    </p>
+                    <div class="advantage-meta">
+                        <span class="meta-text">Еженедельные отчеты</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="advantages-cta">
+                <div class="cta-content">
+                    <h3 class="cta-title">Готовы начать проект?</h3>
+                    <p class="cta-description">Оставьте заявку и получите бесплатную консультацию нашего специалиста</p>
+                </div>
+                <a href="#" class="cta-button">
+                    <span>Обсудить проект</span>
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke-width="2" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="advantages-background">
+            <div class="bg-shape shape-1"></div>
+            <div class="bg-shape shape-2"></div>
+            <div class="bg-shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Partners Component -->
+    <section id="partners" class="partners-section">
+        <div class="partners-container">
+            <div class="partners-header">
+                <div class="section-badge">Партнеры</div>
+                <h2 class="partners-title">Наши <span class="highlight">партнеры</span></h2>
+                <p class="partners-subtitle">
+                    Сотрудничаем с мировыми лидерами строительной индустрии и производителями материалов
+                </p>
+            </div>
+
+            <div class="partners-carousel-wrapper">
+                <div class="partners-carousel" id="partnersCarousel">
+                    <div class="partners-track" id="partnersTrack">
+                        <div class="partners-item">
+                            <img src="assets/images/partners/cat.png" alt="Caterpillar">
+                        </div>
+                        <div class="partners-item">
+                            <img src="assets/images/partners/volvo.png" alt="Volvo Construction">
+                        </div>
+                        <div class="partners-item">
+                            <img src="assets/images/partners/komatsu.png" alt="Komatsu">
+                        </div>
+                        <div class="partners-item">
+                            <img src="assets/images/partners/sandvik.png" alt="Sandvik">
+                        </div>
+                        <div class="partners-item">
+                            <img src="assets/images/partners/liebherr.png" alt="Liebherr">
+                        </div>
+                        <div class="partners-item">
+                            <img src="assets/images/partners/siemens.png" alt="Siemens">
+                        </div>
+                        <div class="partners-item">
+                            <img src="assets/images/partners/schindler.png" alt="Schindler">
+                        </div>
+                        <div class="partners-item">
+                            <img src="assets/images/partners/knauf.png" alt="Knauf">
+                        </div>
+                        <div class="partners-item">
+                            <img src="assets/images/partners/saint-gobain.png" alt="Saint-Gobain">
+                        </div>
+                        <div class="partners-item">
+                            <img src="assets/images/partners/bosch.png" alt="Bosch">
+                        </div>
+                        <div class="partners-item">
+                            <img src="assets/images/partners/hilti.png" alt="Hilti">
+                        </div>
+                        <div class="partners-item">
+                            <img src="assets/images/partners/tarkett.png" alt="Tarkett">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="partners-scrollbar">
+                    <div class="partners-scrollbar-thumb" id="partnersScrollThumb"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="partners-background">
+            <div class="partners-shape shape-1"></div>
+            <div class="partners-shape shape-2"></div>
+        </div>
+    </section>
+
+    <!-- Contacts Component -->
+    <section id="contacts" class="contacts-section">
+        <div class="contacts-container">
+            <div class="contacts-header">
+                <div class="section-badge">Контакты</div>
+                <h2 class="contacts-title">Свяжитесь <span class="highlight">с нами</span></h2>
+                <p class="contacts-subtitle">
+                    Готовы обсудить ваш проект или ответить на любые вопросы. Оставьте заявку и мы свяжемся с вами в
+                    ближайшее время.
+                </p>
+            </div>
+
+            <div class="contacts-content">
+                <div class="contacts-info">
+                    <div class="contact-cards">
+                        <!-- Телефон -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22 16.92V19.92C22 20.52 21.53 21.02 20.94 21.06C20.56 21.09 20.18 21.11 19.8 21.12C17.19 21.23 14.65 20.45 12.53 18.93C10.67 17.6 9.11 15.87 8 13.89C6.99 12.07 6.33 10.03 6.08 7.91C6.03 7.32 6.05 6.72 6.07 6.13C6.09 5.54 6.59 5.08 7.18 5.03H10.18C10.77 5.03 11.26 5.49 11.36 6.07C11.56 7.36 11.97 8.61 12.56 9.76C12.79 10.19 12.7 10.73 12.35 11.06L11.07 12.28C12.36 14.71 14.29 16.64 16.72 17.93L17.94 16.65C18.27 16.3 18.81 16.21 19.24 16.44C20.39 17.03 21.64 17.44 22.93 17.64C23.51 17.74 23.97 18.23 23.97 18.82V18.83Z" />
+                                </svg>
+                            </div>
+                            <div class="contact-content">
+                                <h3 class="contact-title">Телефон</h3>
+                                <a href="tel:+994502345678" class="contact-link">+994 (50) 234-56-78</a>
+                                <p class="contact-description">Irada, Business Development Manager</p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 7L10.94 11.34C11.59 11.75 12.41 11.75 13.06 11.34L20 7" />
+                                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                                </svg>
+                            </div>
+                            <div class="contact-content">
+                                <h3 class="contact-title">Email</h3>
+                                <a href="mailto:info@mcg.az" class="contact-link">info@mcg.az</a>
+                                <p class="contact-description">Для общих вопросов и предложений</p>
+                            </div>
+                        </div>
+
+                        <!-- Адрес -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.7764 3 12 3C8.22355 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div class="contact-content">
+                                <h3 class="contact-title">Адрес</h3>
+                                <p class="contact-text">Fizuli 49, SKS Plaza, 9th floor</p>
+                                <p class="contact-description">MCG, Баку, Азербайджан</p>
+                            </div>
+                        </div>
+
+                        <!-- Часы работы -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="9" />
+                                    <polyline points="12 7 12 12 15 15" />
+                                </svg>
+                            </div>
+                            <div class="contact-content">
+                                <h3 class="contact-title">Часы работы</h3>
+                                <p class="contact-text">Пн-Пт: 9:00 - 18:00</p>
+                                <p class="contact-description">Сб-Вс: выходной</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacts-form">
+                    <form class="contact-form">
+                        <h3 class="form-title">Оставьте заявку</h3>
+                        <p class="form-subtitle">Мы свяжемся с вами в течение 30 минут</p>
+
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required class="form-input">
+                            <label for="name" class="form-label">Ваше имя</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required class="form-input">
+                            <label for="phone" class="form-label">Телефон</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-input">
+                            <label for="email" class="form-label">Email</label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" class="form-input form-textarea"></textarea>
+                            <label for="message" class="form-label">Сообщение</label>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            <span>Отправить заявку</span>
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke-width="2" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacts-background">
+            <div class="contacts-shape shape-1"></div>
+            <div class="contacts-shape shape-2"></div>
+            <div class="contacts-shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <img src="assets/images/logo.png" alt="MCG Logo" class="footer-logo">
+                        <p class="footer-description">
+                            Modern Construction Group — глобальный консалтинг и строительство премиум-класса.
+                            Более 30 лет опыта в проектировании, инженерии и строительстве.
+                        </p>
+                        <div class="footer-contacts">
+                            <div class="footer-contact-item">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22 16.92V19.92C22 20.52 21.53 21.02 20.94 21.06C20.56 21.09 20.18 21.11 19.8 21.12C17.19 21.23 14.65 20.45 12.53 18.93C10.67 17.6 9.11 15.87 8 13.89C6.99 12.07 6.33 10.03 6.08 7.91C6.03 7.32 6.05 6.72 6.07 6.13C6.09 5.54 6.59 5.08 7.18 5.03H10.18C10.77 5.03 11.26 5.49 11.36 6.07C11.56 7.36 11.97 8.61 12.56 9.76C12.79 10.19 12.7 10.73 12.35 11.06L11.07 12.28C12.36 14.71 14.29 16.64 16.72 17.93L17.94 16.65C18.27 16.3 18.81 16.21 19.24 16.44C20.39 17.03 21.64 17.44 22.93 17.64C23.51 17.74 23.97 18.23 23.97 18.82V18.83Z" />
+                                </svg>
+                                <span>+994 (50) 234-56-78</span>
+                            </div>
+                            <div class="footer-contact-item">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 7L10.94 11.34C11.59 11.75 12.41 11.75 13.06 11.34L20 7" />
+                                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                                </svg>
+                                <span>info@mcg.az</span>
+                            </div>
+                            <div class="footer-contact-item">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.7764 3 12 3C8.22355 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                <span>Fizuli 49, SKS Plaza, 9th floor, Баку</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Компания</h3>
+                            <ul class="footer-links-list">
+                                <li><a href="#" class="footer-link">О нас</a></li>
+                                <li><a href="#" class="footer-link">История</a></li>
+                                <li><a href="#" class="footer-link">Команда</a></li>
+                                <li><a href="#" class="footer-link">Карьера</a></li>
+                                <li><a href="#" class="footer-link">Новости</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Услуги</h3>
+                            <ul class="footer-links-list">
+                                <li><a href="#" class="footer-link">Проектирование</a></li>
+                                <li><a href="#" class="footer-link">Строительство</a></li>
+                                <li><a href="#" class="footer-link">Реконструкция</a></li>
+                                <li><a href="#" class="footer-link">Консалтинг</a></li>
+                                <li><a href="#" class="footer-link">Управление</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Проекты</h3>
+                            <ul class="footer-links-list">
+                                <li><a href="#" class="footer-link">Жилые комплексы</a></li>
+                                <li><a href="#" class="footer-link">Коммерческие</a></li>
+                                <li><a href="#" class="footer-link">Промышленные</a></li>
+                                <li><a href="#" class="footer-link">Инфраструктура</a></li>
+                                <li><a href="#" class="footer-link">Все проекты</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Ресурсы</h3>
+                            <ul class="footer-links-list">
+                                <li><a href="#" class="footer-link">Блог</a></li>
+                                <li><a href="#" class="footer-link">Документы</a></li>
+                                <li><a href="#" class="footer-link">Сертификаты</a></li>
+                                <li><a href="#" class="footer-link">FAQ</a></li>
+                                <li><a href="#" class="footer-link">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-cta">
+                    <div class="footer-cta-content">
+                        <h3 class="footer-cta-title">Готовы начать проект?</h3>
+                        <p class="footer-cta-description">Оставьте заявку и получите бесплатную консультацию</p>
+                    </div>
+                    <a href="#" class="footer-cta-button">
+                        <span>Обсудить проект</span>
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke-width="2" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Modern Construction Group. Все права защищены.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#" class="footer-legal-link">Политика конфиденциальности</a>
+                    <a href="#" class="footer-legal-link">Условия использования</a>
+                    <a href="#" class="footer-legal-link">Карта сайта</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-background">
+            <div class="footer-shape shape-1"></div>
+            <div class="footer-shape shape-2"></div>
+        </div>
+    </footer>
+
+    <script src="components/header/header.js"></script>
+    <script src="components/hero/hero.js"></script>
+    <script src="components/about/about.js"></script>
+    <script src="components/advantages/advantages.js"></script>
+    <script src="components/partners/partners.js"></script>
+    <script src="components/contacts/contacts.js"></script>
+    <script src="components/footer/footer.js"></script>
+</body>
+
+</html>
