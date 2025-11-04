@@ -1,6 +1,14 @@
 // components/hero/hero.js
-const video = document.querySelector('.video-background');
 
-if (video) {
-    video.style.opacity = '1';
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const bgImages = document.querySelectorAll('.hero-bg-image');
+    let currentBg = 0;
+
+    function changeBg() {
+        bgImages[currentBg].classList.remove('active');
+        currentBg = (currentBg + 1) % bgImages.length;
+        bgImages[currentBg].classList.add('active');
+    }
+
+    setInterval(changeBg, 10000);
+});

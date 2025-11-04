@@ -1,0 +1,201 @@
+/* components/clients/clients.css */
+
+.clients {
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray-bg) 100%);
+    padding: 6rem 0 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.clients::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--border-light) 50%, transparent 100%);
+}
+
+.clients-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.clients-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients.animate-in .clients-header {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.clients-subtitle {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--primary-red);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 1rem;
+}
+
+.clients-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--dark-gray);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.clients-description {
+    font-size: 1.15rem;
+    color: var(--text-gray);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.clients-carousel {
+    position: relative;
+    margin: 3rem 0;
+    overflow: hidden;
+    mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+}
+
+.clients-track {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    animation: scrollCarousel 40s linear infinite;
+    padding: 1rem 0;
+}
+
+.client-logo {
+    flex: 0 0 auto;
+    width: 160px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-light);
+}
+
+.client-logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border-color: var(--primary-red);
+}
+
+.client-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    filter: grayscale(100%) brightness(0.8);
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.client-logo:hover img {
+    filter: grayscale(0%) brightness(1);
+    opacity: 1;
+}
+
+@keyframes scrollCarousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-160px * 8 - 4rem * 8)); /* Ширина логотипа * количество + gap * количество */
+    }
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .clients-track {
+        gap: 3rem;
+    }
+    
+    .client-logo {
+        width: 140px;
+        height: 70px;
+    }
+    
+    @keyframes scrollCarousel {
+        100% {
+            transform: translateX(calc(-140px * 8 - 3rem * 8));
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .clients {
+        padding: 4rem 0;
+    }
+    
+    .clients-container {
+        padding: 0 1.5rem;
+    }
+    
+    .clients-title {
+        font-size: 2.2rem;
+    }
+    
+    .clients-description {
+        font-size: 1.05rem;
+    }
+    
+    .clients-track {
+        gap: 2rem;
+    }
+    
+    .client-logo {
+        width: 120px;
+        height: 60px;
+        padding: 1rem;
+    }
+    
+    @keyframes scrollCarousel {
+        100% {
+            transform: translateX(calc(-120px * 8 - 2rem * 8));
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .clients-title {
+        font-size: 1.8rem;
+    }
+    
+    .clients-carousel {
+        margin: 2rem 0;
+    }
+    
+    .client-logo {
+        width: 100px;
+        height: 50px;
+        padding: 0.8rem;
+    }
+    
+    @keyframes scrollCarousel {
+        100% {
+            transform: translateX(calc(-100px * 8 - 2rem * 8));
+        }
+    }
+}
+
+/* Пауза анимации при наведении */
+.clients-carousel:hover .clients-track {
+    animation-play-state: paused;
+}
