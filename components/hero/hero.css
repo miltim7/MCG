@@ -59,6 +59,10 @@
     filter: grayscale(100%) brightness(0.7);
 }
 
+.hero-bg-mobile {
+    display: none;
+}
+
 .hero-container {
     position: relative;
     z-index: 2;
@@ -480,6 +484,21 @@
     .hero {
         height: auto;
         min-height: auto;
+    }
+
+    .hero-bg-image:not(.hero-bg-mobile) {
+        display: none;
+    }
+
+    .hero-bg-mobile {
+        display: block;
+        opacity: 1;
+    }
+
+    .hero-bg-mobile img {
+        filter: grayscale(100%) brightness(0.7) blur(15px);
+        transform: scale(1.1);
+        object-position: center;
     }
 
     .hero-container {
