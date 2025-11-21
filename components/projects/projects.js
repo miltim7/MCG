@@ -1,3 +1,4 @@
+// components\projects\projects.js
 document.addEventListener('DOMContentLoaded', function() {
     const tabs = document.querySelectorAll('.projects-tab');
     const sections = document.querySelectorAll('.projects-section');

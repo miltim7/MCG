@@ -2,7 +2,7 @@
 
 .partners {
     background: #1a1a1a;
-    padding: 6rem 0 0 0;
+    padding: 6rem 0 2rem 0;
     position: relative;
     overflow: hidden;
 }
@@ -111,8 +111,11 @@
     }
 }
 
-/* Адаптивность */
 @media (max-width: 1024px) {
+    .partners {
+        padding: 5rem 0;
+    }
+
     .partners-track {
         gap: 3rem;
     }
@@ -131,7 +134,7 @@
 
 @media (max-width: 768px) {
     .partners {
-        padding: 0 0 4rem 0;
+        padding: 4rem 0;
     }
     
     .partners-container {
@@ -164,6 +167,10 @@
 }
 
 @media (max-width: 480px) {
+    .partners {
+        padding: 3rem 0;
+    }
+
     .partners-title {
         font-size: 1.8rem;
     }
@@ -185,7 +192,6 @@
     }
 }
 
-/* Пауза анимации при наведении */
 .partners-carousel:hover .partners-track {
     animation-play-state: paused;
 }

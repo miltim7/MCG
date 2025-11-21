@@ -2,7 +2,7 @@
 
 .clients {
     background: linear-gradient(135deg, var(--white) 0%, var(--light-gray-bg) 100%);
-    padding: 6rem 0 0 0;
+    padding: 6rem 0 2rem 0;
     position: relative;
     overflow: hidden;
 }
@@ -117,12 +117,15 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-160px * 8 - 4rem * 8)); /* Ширина логотипа * количество + gap * количество */
+        transform: translateX(calc(-160px * 8 - 4rem * 8));
     }
 }
 
-/* Адаптивность */
 @media (max-width: 1024px) {
+    .clients {
+        padding: 5rem 0;
+    }
+
     .clients-track {
         gap: 3rem;
     }
@@ -174,6 +177,10 @@
 }
 
 @media (max-width: 480px) {
+    .clients {
+        padding: 3rem 0;
+    }
+
     .clients-title {
         font-size: 1.8rem;
     }
@@ -195,7 +202,6 @@
     }
 }
 
-/* Пауза анимации при наведении */
 .clients-carousel:hover .clients-track {
     animation-play-state: paused;
 }

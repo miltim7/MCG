@@ -1,24 +1,9 @@
-// components\header\header.js
+// components/header/header.js
 
 document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const headerNav = document.querySelector('.header-nav');
     const header = document.querySelector('header');
     
-    mobileMenuToggle.addEventListener('click', function() {
-        this.classList.toggle('active');
-        headerNav.classList.toggle('active');
-        document.body.style.overflow = headerNav.classList.contains('active') ? 'hidden' : '';
-    });
-
-    document.querySelectorAll('.header-nav a').forEach(link => {
-        link.addEventListener('click', function() {
-            mobileMenuToggle.classList.remove('active');
-            headerNav.classList.remove('active');
-            document.body.style.overflow = '';
-        });
-    });
-
+    // Скролл эффект для хедера
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
@@ -27,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Анимация появления секций при скролле
     const observerOptions = {
         threshold: 0.15,
         rootMargin: '0px 0px -50px 0px'

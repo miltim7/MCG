@@ -1,22 +1,7 @@
-// assets\js\main.js
+// assets/js/main.js
+
 document.addEventListener('DOMContentLoaded', function () {
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const headerNav = document.querySelector('.header-nav');
-
-    mobileMenuToggle.addEventListener('click', function () {
-        this.classList.toggle('active');
-        headerNav.classList.toggle('active');
-        document.body.style.overflow = headerNav.classList.contains('active') ? 'hidden' : '';
-    });
-
-    document.querySelectorAll('.header-nav a').forEach(link => {
-        link.addEventListener('click', function () {
-            mobileMenuToggle.classList.remove('active');
-            headerNav.classList.remove('active');
-            document.body.style.overflow = '';
-        });
-    });
-
+    // Эффект тени для хедера при скролле
     window.addEventListener('scroll', function () {
         const header = document.querySelector('header');
         if (window.scrollY > 100) {
@@ -26,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // Анимация появления секций при скролле
     const observerOptions = {
         threshold: 0.15,
         rootMargin: '0px 0px -50px 0px'

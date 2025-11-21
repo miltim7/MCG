@@ -1,3 +1,5 @@
+/* components\projects\projects.css */
+
 .projects {
     background-color: var(--light-gray-bg);
     padding: 6rem 0;
@@ -237,10 +239,22 @@
     .projects-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .project-card {
+        max-width: 100%;
+        width: 100%;
     }
 
     .project-image {
-        height: 220px;
+        height: 280px;
+    }
+
+    .project-image img {
+        object-fit: cover;
+        object-position: center;
     }
 
     .project-content {
@@ -263,6 +277,10 @@
     }
 
     .project-image {
-        height: 200px;
+        height: 260px;
+    }
+
+    .projects-grid {
+        max-width: 100%;
     }
 }
