@@ -1,7 +1,7 @@
 // components/hero/hero.js
 
 document.addEventListener('DOMContentLoaded', function() {
-    const bgImages = document.querySelectorAll('.hero-bg-image');
+    const bgImages = document.querySelectorAll('.hero-bg-image:not(.hero-bg-mobile)');
     let currentBg = 0;
 
     function changeBg() {
