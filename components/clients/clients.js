@@ -1,31 +1,18 @@
-// components/clients/clients.js
+document.addEventListener('DOMContentLoaded', function () {
+    const section = document.querySelector('.clients');
+    if (!section) return;
 
-document.addEventListener('DOMContentLoaded', function() {
-    const clientsSection = document.querySelector('.clients');
-    if (!clientsSection) return;
+    const track = section.querySelector('.clients-track');
+    if (!track) return;
 
-    // Инициализация карусели
-    function initCarousel() {
-        const track = clientsSection.querySelector('.clients-track');
-        const logos = track.querySelectorAll('.client-logo');
-        
-        logos.forEach(logo => {
-            logo.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-5px) scale(1.05)';
-            });
-            
-            logo.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
-    }
+    const originals = Array.from(track.children);
+    const count = originals.length;
 
-    // Инициализация
-    initCarousel();
+    track.style.setProperty('--count', String(count));
 
-    // Оптимизация производительности анимации
-    const track = clientsSection.querySelector('.clients-track');
-    if (track) {
-        track.style.willChange = 'transform';
-    }
+    originals.forEach((node) => {
+        track.appendChild(node.cloneNode(true));
+    });
+
+    track.style.willChange = 'transform';
 });
