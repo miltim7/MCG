@@ -1,5 +1,3 @@
-/* components/header/header.css */
-
 header {
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
@@ -96,8 +94,13 @@ header.scrolled .header-nav a.ecology-link::after {
     background-color: #2E7D32;
 }
 
-.header-nav a:hover::after {
+.header-nav a:hover::after,
+.header-nav a.active::after {
     width: 100%;
+}
+
+header.scrolled .header-nav a.ecology-link.active::after {
+    background-color: #2E7D32;
 }
 
 .header-actions {
