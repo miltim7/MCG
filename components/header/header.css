@@ -88,6 +88,10 @@ header.scrolled .header-nav a::after {
     background-color: #4CAF50;
 }
 
+.ecology-link {
+    color: #4CAF50 !important;
+}
+
 header.scrolled .header-nav a.ecology-link::after {
     background-color: #2E7D32;
 }

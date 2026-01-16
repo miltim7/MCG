@@ -9,6 +9,9 @@
     <title>MCG - Modern Construction Group | Строительство ангаров и инженерные решения</title>
     <meta name="description"
         content="MCG - 30 лет опыта в строительстве промышленных объектов, ангаров и инженерных сооружений. Более 100 успешных проектов.">
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
     <link rel="stylesheet" href="assets/css/globals.css">
     <link rel="stylesheet" href="components/header/header.css">
     <link rel="stylesheet" href="components/hero/hero.css">
@@ -472,15 +475,10 @@
                 </p>
             </div>
 
-            <div class="projects-tabs">
-                <button class="projects-tab active" data-tab="significant-projects">Significant Projects</button>
-                <button class="projects-tab" data-tab="delivered-projects">Delivered Projects</button>
-            </div>
-
             <div class="projects-content">
-                <!-- Significant Projects -->
-                <div class="projects-section active" id="significant-projects">
+                <div class="projects-section active" id="delivered-projects">
                     <div class="projects-grid">
+
                         <div class="project-card">
                             <div class="project-image">
                                 <img src="assets/images/significant-project1.jpg"
@@ -575,10 +573,11 @@
 
                         <div class="project-card">
                             <div class="project-image">
-                                <img src="assets/images/significant-project5.jpg" alt="Бумажная фабрика">
+                                <img src="assets/images/significant-project5.jpg"
+                                    alt="Фабрика по изготовлению бумажных изделий ">
                             </div>
                             <div class="project-content">
-                                <h3 class="project-title">Бумажная фабрика</h3>
+                                <h3 class="project-title">Фабрика по изготовлению бумажных изделий </h3>
                                 <p class="project-description">
                                     Выполнено 56000 м³ земляных работ и 6000 м³ бетонных работ с установкой подстанции
                                 </p>
@@ -617,12 +616,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <!-- /ПЕРЕНЕСЕНО ИЗ Significant Projects -->
 
-                <!-- Delivered Projects -->
-                <div class="projects-section" id="delivered-projects">
-                    <div class="projects-grid">
+                        <!-- ТВОИ Delivered Projects (как было) -->
                         <div class="project-card">
                             <div class="project-image">
                                 <img src="assets/images/delivered-project1.jpg" alt="Производственная база EXPRO">
@@ -759,6 +755,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -1128,7 +1125,6 @@
     <script src="assets/js/main.js"></script>
     <script src="components/header/header.js"></script>
     <script src="components/hero/hero.js"></script>
-    <script src="components/projects/projects.js"></script>
     <script src="components/clients/clients.js"></script>
     <script src="components/geography/geography.js"></script>
     <script src="components/partners/partners.js"></script>
