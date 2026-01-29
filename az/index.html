@@ -1,5 +1,5 @@
 <!-- /az/index.html -->
- 
+
 <!DOCTYPE html>
 <html lang="az">
 
@@ -31,28 +31,37 @@
 
 <body>
     <header>
-        <div class="header-container">
-            <a href="/az" class="header-logo">
-                <img src="../assets/images/logo.png" alt="MCG Logo" />
-            </a>
+    <div class="header-container">
+        <a href="/az" class="header-logo">
+            <img src="../assets/images/logo.png" alt="MCG Logo" />
+        </a>
+        <nav class="header-nav">
+            <a href="#about">Şirkət</a>
+            <a href="#clients">Müştərilər</a>
+            <a href="#projects">Layihələr</a>
+            <a href="#geography">Coğrafiya</a>
+            <a href="#ecology" class="ecology-link" style="color: #4CAF50 !important;">Ekologiya</a>
 
-            <nav class="header-nav">
-                <a href="#about">Şirkət</a>
-                <a href="#clients">Müştərilər</a>
-                <a href="#projects">Layihələr</a>
-                <a href="#geography">Coğrafiya</a>
-                <a href="#ecology" class="ecology-link" style="color: #4CAF50 !important;">Ekologiya</a>
-            </nav>
-
-            <div class="header-actions">
-                <div class="language-switcher">
-                    <button class="lang-btn" data-lang="ru">RU</button>
-                    <button class="lang-btn" data-lang="en">EN</button>
-                    <button class="lang-btn active" data-lang="az">AZ</button>
-                </div>
+            <div class="language-switcher mobile-only">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ru">RU</button> 
+                <button class="lang-btn active" data-lang="az">AZ</button>
             </div>
+        </nav>
+        <div class="header-actions">
+            <div class="language-switcher desktop-only">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ru">RU</button> 
+                <button class="lang-btn active" data-lang="az">AZ</button>
+            </div>
+            <button class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </header>
+    </div>
+</header>
 
     <section class="hero animate-on-scroll">
         <div class="hero-background">
